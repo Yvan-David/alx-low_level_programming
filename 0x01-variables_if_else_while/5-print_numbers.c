@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- *a program that prints the numbers
- *main : always return 0
-*/
+/**
+ * main - prints a program that prints the numbers
+ * Return: 0 once exited, otherwise non zero
+ */
 int main(void)
 {
 int d;

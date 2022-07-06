@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- *a program that prints the alphabet in lowercase base sixteen
- *main : always return 0
-*/
+/**
+ * main - prints program that prints the alphabet in lowercase base sixteen
+ * Return: 0 once exited, otherwise nonzero
+ */
 int main(void)
 {
 int ch;

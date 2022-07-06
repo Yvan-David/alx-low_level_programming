@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- *a program that prints the alphabet in lowercase reverse
- *main : always return 0
-*/
+/**
+ * main - prints a program that prints the alphabet in lowercase reverse
+ * Return: 0 once exited, otherwise nonzero
+ */
 int main(void)
 {
 int ch;

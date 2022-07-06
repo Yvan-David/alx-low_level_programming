@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- *a program that prints the numberz
- *main : always return 0
-*/
+/**
+ * main - prints program that prints the numberz
+ * Return: 0 once exited, otherwise non zero
+ */
 int main(void)
 {
 int ch;

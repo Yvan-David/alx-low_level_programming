@@ -1,8 +1,7 @@
 #include <stdio.h>
-/*
- * main - counting numbers
- *
- * return : 0 always
+/**
+ * main - prints numbers in ascending order
+ * Return: 0 if exited properly, non zero otherwise
  */
 int main(void)
 {
