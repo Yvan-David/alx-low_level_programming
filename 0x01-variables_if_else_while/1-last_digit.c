@@ -2,28 +2,28 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main -> assign a random number to the variable n each time it is ex
- * based a condition
- * return : always return 0
- **/
+ * main - print assign a random number to the variable n each time it is ex
+ * Return: 0 once exited, otherwise ninzero
+ */
 int main(void)
 {
 int n;
+int ln;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-printf("last digit of %d is ", n);
-if (n > 5)
+ln = n % 10;
+if (ln > 5)
 {
-	printf("greater than 5");
+printf("last digit of %d is %d and is greater than 5\n", n, ln);
 }
-if (n == 0)
+else if (ln == 0)
 {
-	printf("0");
+	printf("last digit of %d is %d and is 0\n", n, ln);
 }
-if (n < 0 && n != 0)
+else
 {
-	printf("less than 6 not 0");
+	printf("last digit of %d is %d and is less than 6 not 0\n", n, ln);
 }
-printf("\n");
+
 return (0);
 }
