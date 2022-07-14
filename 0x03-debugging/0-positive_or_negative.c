@@ -5,11 +5,11 @@
 * main - print a random number to the variable n each time it is executed
 * Return: 0 once exited, otherwise return non zero
 */
-void positive_or_negative(int i)
-{
-int n;
+void positive_or_negative(int i){
+	int n;
+
 srand(time(0));
-n = rand() - RAND_MAX / 2;
+n = i;
 if (n > 0)
 {
 	printf("%d is positive\n", n);
@@ -22,7 +22,7 @@ if (n < 0)
 {
 	printf("%d is negative\n", n);
 }
-return (0);
+
 }
 /**
  * debugging - example return zero
