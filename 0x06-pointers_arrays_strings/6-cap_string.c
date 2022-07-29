@@ -5,7 +5,7 @@
  * @x: argument
  * Return: capitalised
  */
-char *cap_string(char *)
+char *cap_string(char *x)
 {
 	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 	int len = 13;
@@ -20,7 +20,7 @@ char *cap_string(char *)
 				x[a] = x[a] - 32;
 			i++;
 		}
-		a++
+		a++;
 	}
 	return (x);
 }
