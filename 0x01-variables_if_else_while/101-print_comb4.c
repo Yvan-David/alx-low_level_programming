@@ -1,39 +1,28 @@
 #include <stdio.h>
-/**
- * main - prints numbers in ascending order
- * Return: 0 if exited properly, non zero otherwise
- */
-int main(void)
-{
-int ch;
 int n;
+int i;
 int p;
-for (ch = 48; ch <= 57; ch++)
+int main()
 {
-	for (n = 49; n <= 57; n++)
+	for (n = 48; n <= 57; n++)
 	{
-		for (p = 50; p <= 57; p++)
+		for (i = 49; i <= 57; i++)
 		{
-			if (p > ch)
+			for (p = 50; p <= 57; p++)
 			{
-				if (p > n)
+				if (i > n && p > i && p > n )
 				{
-					if (n > ch)
+					putchar(n);
+					putchar(i);
+					putchar(p);
+					if (n != 55 || i != 56 || p != 57)
 					{
-						putchar(ch);
-						putchar(n);
-						putchar(p);
-						if (ch != 55 || n != 56 || p != 57)
-						{
-							putchar(44);
-							putchar(32);
-						}	
+						putchar(44);
+						putchar(32);
 					}
 				}
 			}
 		}
 	}
-}
-putchar(10);
-return (0);
+	return (0);
 }
