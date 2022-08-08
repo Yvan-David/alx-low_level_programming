@@ -1,5 +1,8 @@
 #include "main.h"
 
+/**
+ * jack_bauer - prints hours
+ */
 void jack_bauer(void)
 {
 	int ht = 0;
@@ -13,15 +16,17 @@ void jack_bauer(void)
 		{
 			for (m = 0; m <= 9; m++)
 			{
-				if ((ht == 2 && h == 4) || (ht == 2 && h == 5) ||  (ht == 2 && h == 6) || (ht == 2 && h == 7) || (ht == 2 && h == 8) || (ht == 2 && h == 9))
+				if ((ht == 2 && h == 4) || (ht == 2 && h == 5) ||  (ht == 2 && h == 6)
+					break;
+				if else((ht == 2 && h == 7) || (ht == 2 && h == 8) || (ht == 2 && h == 9))
 				{
 					break;
 				}
-				_putchar(ht);
-				_putchar(h);
+				_putchar(ht + '0');
+				_putchar(h + '0');
 				_putchar(':');
-				_putchar(mt);
-				_putchar(m);
+				_putchar(mt + '0');
+				_putchar(m + '0');
 				_putchar('\n');
 
 			}
