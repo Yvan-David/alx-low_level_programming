@@ -3,6 +3,8 @@
 
 /**
  * print_array - prints array element
+ * @a: array
+ * @n: parameter
  */
 void print_array(int *a, int n)
 {
@@ -10,6 +12,8 @@ void print_array(int *a, int n)
 
 	for (c = 0; c != n; c++)
 	{
-		printf ("%d, ", a[c]);
-	}	
+		if (c != 0)
+			printf(", ")
+		printf("%d", a[c]);
+	}
 }
