@@ -5,10 +5,12 @@ unsigned int binary_to_uint(const char *b)
 {
 	if (b == NULL)
 		return(0);
-	int n = 0, var = 0,c;
-	int plan = 0,y;
+	int n = 0, var = 0;
+	int c;
+	int y,s;
+	s = strlen(b);
 	y = con_c_to_i(b);
-	for(n = 0; n < strlen(b); n++)
+	for(n = 0; n < s; n++)
 	{
 		c = (y % 10);
 		if (c == 1)
