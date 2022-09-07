@@ -1,9 +1,10 @@
 #include "lists.h"
 /**
- * add_node - add
- * @head: pointer
- * @str: pointerto
- * Return: address
+ * add_node - add a new node at the beginning of the list
+ * @head: pointer to the linkedlist
+ * @str: pointerto the stringcomponent of the node
+ *
+ * Return: address of the head
  */
 list_t *add_node(list_t **head, const char *str)
 {

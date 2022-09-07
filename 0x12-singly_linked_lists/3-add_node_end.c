@@ -1,10 +1,12 @@
 #include "lists.h"
 /**
-* add_node_end - append
-* @head: pointer
-* @str: the string
-* Return: pointer
-*/
+ * add_node_end - append a node to the linked list
+ * @head: pointer to pointer to first element of
+ * the linked list
+ * @str: the string element of the node
+ *
+ * Return: pointer to the lat added node
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *tail, *end;
@@ -28,10 +30,13 @@ list_t *add_node_end(list_t **head, const char *str)
 		while (end)
 		{
 			if ((end)->next == NULL)
+			{
 				break;
+			}
 			end = (end)->next;
 		}
 		end->next = tail;
 	}
+
 	return (tail);
 }
