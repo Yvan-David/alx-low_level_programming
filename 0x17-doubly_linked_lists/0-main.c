@@ -12,6 +12,10 @@
 {
     int c = 0;
    const dlistint_t* tmp = h;
+   if (h == NULL)
+    {
+        return (0);
+    }
     while (tmp -> next != NULL)
     {
         printf("%d\n",tmp -> n);
@@ -29,16 +33,20 @@ int main(void)
     size_t n;
 
     head = &hello;
-    new = malloc(sizeof(dlistint_t));
-    if (new == NULL)
+    int c = 0, b = 9;
+    for (c = 0; c < 5; c++)
     {
-        printf("Error\n");
-        return (1);
+        new = malloc(sizeof(dlistint_t));
+        if (new == NULL)
+        {
+            printf("Error\n");
+            return (1);
+        }
+        new -> n = b++;
+        new -> next = head;
+        head = new;
     }
-    new -> n = 9;
-    new -> next = head;
-    head = new;
-    n = print_dlistint(head);
+    n = print_dlistint(0);
     printf("-> %lu elements\n", n);
     free(new);
     return (0);
