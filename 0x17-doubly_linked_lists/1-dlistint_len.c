@@ -20,5 +20,5 @@ while (tmp->next != NULL)
 tmp = tmp->next;
 c++;
 }
-return (c);
+return (c + 1);
 }

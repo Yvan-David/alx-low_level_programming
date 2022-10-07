@@ -21,5 +21,6 @@ printf("%d\n", tmp->n);
 tmp = tmp->next;
 c++;
 }
+printf("%d\n", tmp->n);
 return (c);
 }
