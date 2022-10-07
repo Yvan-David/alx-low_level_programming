@@ -22,5 +22,5 @@ tmp = tmp->next;
 c++;
 }
 printf("%d\n", tmp->n);
-return (c);
+return (c + 1);
 }
