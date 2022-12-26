@@ -93,7 +93,7 @@ void times_table(void)
 			_putchar(' ');
 			_putchar((g / 10) + '0');
 			_putchar((g % 10) + '0');
-			_putchar(' ');
+			_putchar(',');
 		}
 		if (h <= 9)
 		{
