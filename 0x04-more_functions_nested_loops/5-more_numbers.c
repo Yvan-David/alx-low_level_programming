@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * more_numbers - prints digits
+ * more_numbers - print from 0 to 14 10x
  */
-
 void more_numbers(void)
 {
-	int x;
-	int y;
+	int i, j;
 
-	for (x = 0; x < 10; x++)
+	for (i = 0; i < 10; i++)
 	{
-		for (y = 0; y < 15; y++)
+		for (j = 0; j < 15; j++)
 		{
-			_putchar(y);
+			if (j / 10 != 0)
+				_putchar('0' + j / 10);
+			_putchar('0' + j % 10);
 		}
 		_putchar('\n');
 	}
+
 }
