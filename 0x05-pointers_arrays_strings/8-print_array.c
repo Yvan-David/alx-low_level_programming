@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_array - prints array element
- * @a: array
- * @n: parameter
- */
+* print_array - prints array element
+* @a: array
+* @n: parameter
+*/
 void print_array(int *a, int n)
 {
 int c = 0;
