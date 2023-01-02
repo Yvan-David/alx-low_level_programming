@@ -30,6 +30,6 @@ int _atoi(char *s)
 		}
 	}
 	if (state == NEG)
-		return (-result);
+		return (result * -1);
 	return (result);
 }
