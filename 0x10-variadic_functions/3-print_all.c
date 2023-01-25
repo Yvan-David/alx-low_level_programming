@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 				default:
 					break;
 			}
-			spr = ",";
+			spr = ", ";
 			i++;
 		}
 
