@@ -1,0 +1,12 @@
+
+.PHONY : all
+all : school
+school : main.o school.o
+	gcc $^ -o school
+main.o : main.c
+	gcc  -c -o $@ main.c
+school.o : school.c
+	gcc  -c -o school.o school.c
+.PHONY : clean
+clean :
+	rm *.o school
