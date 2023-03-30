@@ -6,7 +6,7 @@ OBJ = main.o school.o
 .PHONY : all
 all : $(NAME)
 $(NAME) : $(OBJ)
-	$(CC) $^ -o school
+	$(CC) $^ -o $(NAME)
 main.o : main.c
 	$(CC)  -c -o $@ main.c
 school.o : school.c
