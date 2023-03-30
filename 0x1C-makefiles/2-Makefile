@@ -1,7 +1,11 @@
 
+CC = gcc
+SRC = main.c school.c
+NAME = school
+OBJ = main.o school.o
 .PHONY : all
 all : school
-school : main.o school.o
+school : $(OBJ)
 	gcc $^ -o school
 main.o : main.c
 	gcc  -c -o $@ main.c
